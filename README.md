@@ -1,4 +1,4 @@
-## CLI Data Parser
+# CLI Data Parser
 A command-line tool that reads employee data from a CSV or JSON file, applies filters, transformations, and aggregations, then outputs clean structured JSON. Built with Python's standard library plus rich for colourful terminal output.
 
 cli-data-parser/
@@ -44,25 +44,25 @@ pip install rich typer
 
 Commands for Powershell:
 
-# 1. Basic — read all records from CSV
+## 1. Basic — read all records from CSV
 python main.py --input data/employees.csv --output output/result.json
 
-# 2. Filter by city
+## 2. Filter by city
 python main.py --input data/employees.csv --output output/result.json --city Kolkata
 
-# 3. Filter + transform names to uppercase + show aggregates
+## 3. Filter + transform names to uppercase + show aggregates
 python main.py --input data/employees.csv --output output/result.json --city Kolkata --uppercase --aggregate
 
-# 4. Add salary bracket (Low / Mid / High) + aggregates
+## 4. Add salary bracket (Low / Mid / High) + aggregates
 python main.py --input data/employees.csv --output output/result.json --bracket --aggregate
 
-# 5. Filter by minimum salary
+## 5. Filter by minimum salary
 python main.py --input data/employees.csv --output output/result.json --min-salary 60000
 
-# 6. Filter by maximum age
+## 6. Filter by maximum age
 python main.py --input data/employees.csv --output output/result.json --max-age 27
 
-# 7. Read from JSON instead of CSV
+## 7. Read from JSON instead of CSV
 python main.py --input data/employees.json --output output/result.json --city Delhi --aggregate
 
 How It Works — Pipeline Flow:
